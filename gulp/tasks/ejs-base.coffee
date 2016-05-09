@@ -4,9 +4,9 @@ conf = require '../config'
 ejs  = require 'gulp-ejs'
 plum = require 'gulp-plumber'
 
+console.log conf.data.init.pages
 
-
-gulp.task 'ejs', ->
+gulp.task 'ejs-basic', ->
 	gulp.src [
 		"#{conf.path.src.root}/**/*.ejs"
 		"!#{conf.path.src.root}/**/_*.ejs"
@@ -19,6 +19,7 @@ gulp.task 'ejs', ->
 			.pipe ejs({
 				# options
 				msg: 'Hello Gulp!'
+				data: conf.data
 			}, {
 				# settings
 				ext: '.html'

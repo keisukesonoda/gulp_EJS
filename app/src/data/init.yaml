@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+pages:
+  - dir: 
+    menu: ホーム
+    files:
+      - name: index
+        title: ホーム
+      - name: hoge
+        title: hoge
+  - dir: about
+    menu: 概要
+    files:
+      - name: index
+        title: 概要
+      - name: fuga
+        title: fuga
+  - dir: contact
+    menu: 問い合わせ
+    files:
+      - name: index

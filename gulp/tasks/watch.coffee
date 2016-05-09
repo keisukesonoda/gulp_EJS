@@ -23,7 +23,7 @@ gulp.task 'watch', ->
 	# ect
 	gulp.watch [
 		"#{config.path.src.root}/**/*.ejs"
-	], ['ejs']
+	], ['ejs-basic']
 
 	gulp.watch [
 		"#{config.path.src.root}/**/*"

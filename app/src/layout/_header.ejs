@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ejs test</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header id="header" class="header">
+		<h1>EJS TEST <%- msg %></h1>
+
+		<div>
+			<% data.init.pages.forEach(function(page){ %>
+
+				<p><%- page.dir %></p>
+
+				<% page.files.forEach(function(file){ %>
+
+					<p><%= file.name %></p>
+
+				<% }) %>
+
+			<% }) %>
+
+		</div>
+
+
+	</header>
